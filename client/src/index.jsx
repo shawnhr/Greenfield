@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import SvgIcon from 'material-ui/SvgIcon';
+import React from "react";
+import ReactDOM from "react-dom";
+import AppHeader from "./components/AppHeader.jsx";
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render(props) {
@@ -42,8 +44,11 @@ class App extends React.Component {
        // </MuiThemeProvider>
 
       )
+      <div>
+        <AppHeader />
+      </div>
+    );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
-
+ReactDOM.render(<App />, document.getElementById("app"));
