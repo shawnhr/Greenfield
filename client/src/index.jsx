@@ -44,11 +44,8 @@ class App extends React.Component {
        // </MuiThemeProvider>
 
       )
-      <div>
-        <AppHeader />
-      </div>
-    );
-  }
+    
+      }
 }
 
 ReactDOM.render(<App />, document.getElementById("app"));
